@@ -1,0 +1,17 @@
+<div style="margin-top: 10%;" class="container" ng-controller="showGenresController">
+    <div class="row">
+        <div class="col col-lg-12">
+            <h3>{{genres}}</h3>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-striped">
+            <tr>
+                <td ng-repeat="show in tvShows.data" ng-class="{active:taggedA(show.show.id)}">
+                    <button ng-click="getShowDetail(show.show.id)">{{show.show.name}}</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

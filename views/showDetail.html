@@ -1,0 +1,42 @@
+<div style="margin-top: 10%;" class="container" ng-controller="showDetailsController">
+    <button ng-click="back()">BACK</button>
+    <div class="row">
+        <table class="table table-striped">
+            <tr>
+                <td>Name:
+                </td>
+                <td> {{showDetail.data.name}}
+                </td>
+            </tr>
+            <tr>
+                <td>Language:
+                </td>
+                <td> {{showDetail.data.language}}
+                </td>
+            </tr>
+            <tr>
+                <td>Genres:
+                </td>
+                <td> {{showDetail.data.genres}}
+                </td>
+            </tr>
+            <tr>{{showDetail.data.officialSite}}
+                </td>
+                <td>{{showDetail.data.officialSite}}
+                </td>
+            </tr>
+            <tr>
+                <td>Rating:
+                </td>
+                <td> {{showDetail.data.rating}}
+                </td>
+            </tr>
+            <tr>
+                <td>Summary:
+                </td>
+                <td> {{showDetail.data.summary}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

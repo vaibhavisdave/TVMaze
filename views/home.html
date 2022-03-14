@@ -1,0 +1,23 @@
+<div class="container" ng-controller="tvMazeController">
+    <div class="row">
+        <div class="col col-lg-12">
+            <h3>Tags</h3>
+            <span class="smallText">
+                {{tvShows}}
+            </span><br><br>
+
+            <ul class="nav nav-pills">
+                <li ng-click="showGenreTVshaows('Drama')">
+                    <a href="/genres/Drama">Drama</a>
+                </li>
+                <li ng-click="showGenreTVshaows('Comedy')">
+                    <a href="/genres/Comedy">Comedy</a>
+                </li>
+                <li ng-click="showGenreTVshaows('Documentries')">
+                    <a href="/genres/Documentries">Documentries</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
